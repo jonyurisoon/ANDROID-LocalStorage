@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="18dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/theme"/>
+
+    <RadioGroup
+        android:id="@+id/ThemeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/LightMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginStart="12dp"
+            android:text="@string/light_mode"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/DarkMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:padding="12dp"
+            android:text="@string/dark_mode"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/notifications"/>
+
+    <CheckBox
+        android:id="@+id/AllowPushNotificationCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/allow_push_notifications"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/phone_details"/>
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_address"
+        android:autofillHints="emailAddress"
+        android:layout_margin="12dp"/>
+
+    <EditText
+        android:id="@+id/Nickname"
+        android:autofillHints="name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:inputType="text"
+        android:hint="@string/nickname"
+        android:layout_margin="12dp"/>
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:text="@string/save"/>
+
+</LinearLayout>

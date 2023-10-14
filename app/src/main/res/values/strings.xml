@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Activity 4</string>
+    <string name="theme">Theme</string>
+    <string name="light_mode">Light mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="phone_details">Phone Details</string>
+    <string name="allow_push_notifications">Allow push notifications</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="email_address">Email address</string>
+    <string name="nickname">Nickname</string>
+    <string name="save">Save</string>
+</resources>
